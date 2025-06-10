@@ -9,6 +9,8 @@ on:
       - ".github/workflows/compile-and-deploy.yml"
       - "GithubActionsDemoApp/**"
       - "Tests/**"
+    tags:
+      - '*'
 
 env:
   DOTNET_VERSION: 8.0.x
@@ -54,4 +56,4 @@ jobs:
         with:
           files: ./myapp.zip
           body: "Our Application"
-          tag_name: ${{github.ref_name}}
+          tag_name: ${{ github.ref_name }}
