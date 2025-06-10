@@ -52,7 +52,7 @@ jobs:
         run: zip -r myapp.zip ./myapp
 
       - name: GH Release
-        uses: softprops/action-gh-release@v2.3.0
+        uses: softprops/action-gh-release@v2.1.0
         with:
           files: ./myapp.zip
           body: "Our Application"
